@@ -1,0 +1,85 @@
+/* wofi style — "Miasma" theme
+ * Palette ported from https://github.com/OldJobobo/omarchy-miasma-theme
+ */
+
+@define-color bg #222222;
+@define-color fg #c2c2b0;
+@define-color fg-bright #d7c483;
+@define-color muted #666666;
+@define-color accent #78824b;
+@define-color selection-bg #e4c47a;
+@define-color selection-fg #000000;
+
+* {
+  font-family: "Cascadia Code";
+  font-size: 13px;
+}
+
+window {
+  background-color: @bg;
+  border: 2px solid @accent;
+  border-radius: 8px;
+}
+
+#input {
+  background-color: @bg;
+  color: @fg;
+  border: 1px solid @muted;
+  border-radius: 6px;
+  margin: 8px;
+  padding: 6px 10px;
+}
+
+#input:focus {
+  border: 1px solid @accent;
+}
+
+#inner-box {
+  margin: 4px 8px 8px 8px;
+}
+
+#outer-box {
+  margin: 0;
+  background-color: @bg;
+}
+
+#scroll {
+  margin: 0 4px;
+}
+
+#entry {
+  color: @fg;
+  background-color: @bg;
+  padding: 6px 8px;
+  margin: 2px 0;
+  border-radius: 6px;
+}
+
+#entry:selected {
+  background-color: @selection-bg;
+}
+
+#entry:selected #text {
+  color: @selection-fg;
+}
+
+#text {
+  color: @fg;
+}
+
+#img {
+  margin-right: 8px;
+}
+
+scrollbar {
+  background-color: @bg;
+}
+
+scrollbar slider {
+  background-color: @muted;
+  border-radius: 5px;
+}
+
+scrollbar slider:hover {
+  background-color: @accent;
+}
