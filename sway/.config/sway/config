@@ -20,11 +20,11 @@ set $orange    #b36d43
 set $magenta   #bb7744
 set $cyan      #c9a554
 
-font pango:Cascadia Code 10
+font pango:Cascadia Code 14
 
 ### Output / wallpaper
-output * bg ~/.config/backgrounds/miasma-wraith.jpg fill
-output * background ~/.config/backgrounds/miasma-wraith.jpg fill
+output * bg ~/.config/backgrounds/01-nature-of-fear.jpg fill
+output * background ~/.config/backgrounds/01-nature-of-fear.jpg fill
 
 ### Input
 input type:keyboard {
